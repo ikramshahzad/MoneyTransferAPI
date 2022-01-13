@@ -1,6 +1,7 @@
 # MoneyTransferAPI
 A sample spring boot project for money transfer between account
 
+
 ### Prerequisite
 - Maven
 - JDK 1.8+
@@ -31,10 +32,10 @@ It provides APIs for following 2 features
 ### Basic API Information
 | Method | Path | Usage |
 | --- | --- | --- |
-| GET | /api/account/ | retrieve all account information |
-| GET | /api/account/{id} | retrieve account information |
-| GET | /api/transaction | retrieve all transaction information |
-| GET | /api/transaction/{id} | retrieve transaction information |
+| GET | /api/account/ | fetch all account information |
+| GET | /api/account/{id} | fetch account information |
+| GET | /api/transaction | fetch all transaction information |
+| GET | /api/transaction/{id} | fetch transaction information |
 | POST | /api/transaction/transfer | create money transfer transaction |
 
 ### Error Code
