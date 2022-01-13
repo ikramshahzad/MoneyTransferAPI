@@ -33,9 +33,9 @@ It provides APIs for following 2 features
 | --- | --- | --- |
 | GET | /api/account/ | retrieve all account information |
 | GET | /api/account/{id} | retrieve account information |
-| POST | /api/transaction | create money transfer transaction |
 | GET | /api/transaction | retrieve all transaction information |
-| GET | /api/transaction{id} | retrieve transaction information |
+| GET | /api/transaction/{id} | retrieve transaction information |
+| POST | /api/transaction/transfer | create money transfer transaction |
 
 ### Error Code
 | Code | Description |
@@ -44,6 +44,8 @@ It provides APIs for following 2 features
 | ERR_ACC_B_0002 | used when account does not exist. |
 | ERR_ACC_B_0003 | used when invalid account id |
 | ERR_ACC_B_0004 | used when transaction does not exist. |
+| ERR_ACC_B_0005 | used when account already exist. |
+
 
 ### Library used
 | Library | Usage |
@@ -60,7 +62,7 @@ script file \MoneyTransferAPIs.postman_collection.json contains postmen collecti
 | Method | Path | Usage | Name |
 | --- | --- | --- | --- |
 | GET | /api/account/ | retrieve all account information | fetchAllAccounts | 
-| GET | /api/account/{id} | retrieve account information | fetchAccount | 
-| POST | /api/transaction | create money transfer transaction | moneyTransfer | 
+| GET | /api/account/{id} | retrieve account information | fetchAccount |  
 | GET | /api/transaction | retrieve all transaction information | fetchAllTransactions | 
-| GET | /api/transaction{id} | retrieve transaction information | fetchTransaction | 
+| GET | /api/transaction{id} | retrieve transaction information | fetchTransaction |
+| POST | /api/transaction | create money transfer transaction | moneyTransfer | 
